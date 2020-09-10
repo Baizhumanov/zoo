@@ -1,0 +1,400 @@
+html, body {padding: 0; margin: 0;}
+body {
+	font-family: Roboto,
+	'Poppins',
+	BlinkMacSystemFont,
+	Segoe UI,
+	Roboto,
+	Oxygen,
+	Ubuntu,
+	Cantarell,
+	Fira Sans,
+	Droid Sans,
+	Helvetica Neue,
+	sans-serif;
+	/*color: #423c4a;*/
+	color: #3f3f4f;
+	background-color: #fafbff;
+}
+
+.flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+a.btn-main {
+	font-weight: 500;
+	color: white;
+	background: rgb(115,77,247);
+	background: linear-gradient(to right, rgba(115,77,247,1) 0%, rgba(173,97,239,1) 100%);
+	text-decoration: none;
+	text-align: center;
+	border-radius: 100px;
+	user-select: none;
+	outline: none;
+}
+
+/*header, main {border: 1px solid black;}*/
+
+/*--------------------HEADER GO--------------------*/
+header {/*
+	background-image: url(images/bgg1.jpg);
+	background-size: cover;
+	height: 70vh; 
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	color: white;*/
+}
+
+.head, .info, .items, .item, .name  {
+	/*border: 1px solid red;*/
+}
+
+.head {
+	padding: 15px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .name {
+	font-size: 1.6em;
+	font-weight: 500;
+	width: 300px;
+	text-align: center;
+}
+
+header .items {
+	font-size: 1.1em;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+header .item {margin: 0 25px; }
+
+.head .button a {
+	padding: 10px 30px;
+	display: block;
+	color: white;
+}
+
+.head a {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	user-select: none;
+	outline: none;
+	color: #9ca2bd;
+}
+.hide {display: none;}
+/*--------------------HEADER END--------------------*/
+/*--------------------MAIN GO--------------------*/
+/*--------------------SECTION MAIN GO--------------------*/
+/*.main, .title, .text, main .item, .links { border: 1px solid red; }*/
+
+.main {
+	justify-content: space-around;
+	margin-top: 60px;
+}
+
+.main .flex {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.main .title {
+	font-size: 2em;
+	font-weight: 500;
+}
+
+.main .text {
+	font-size: 1.4em;
+	width: 500px;
+	margin: 20px 0 40px;
+}
+
+.main .links {
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.links a {
+	display: block;
+	text-align: center;
+	font-size: 1.3em;
+	padding: 10px 20px;
+}
+
+a.first {
+	padding: 10px 40px;
+}
+
+.links a.second {
+	color: #7049fa;
+	background: none;
+	border: 2px solid #7049fa;
+}
+/*--------------------SECTION MAIN END--------------------*/
+/*--------------------SECTION INFO GO--------------------*/
+/*.info, .info .title, .info .card, .number, .cards { border: 1px solid red; }*/
+.info {
+	margin: 60px 0 40px;
+}
+
+.item.title {
+	font-size: 2em;
+	text-align: center;
+	font-weight: 500;
+}
+
+.info .cards {
+	justify-content: center;
+	margin: 40px 0;
+}
+
+.info .card {
+	align-items: center;
+	width: 220px;
+	height: 180px;
+	padding: 20px;
+	margin: 20px;
+	box-shadow: 0px 10px 15px rgba(115, 77, 247, 0.25);
+	border-radius: 10px;
+	background-color: white;
+}
+
+.card .icon {
+	width: 40px;
+	height: 40px;
+	border: 1px solid pink;
+	margin-bottom: 20px;
+}
+
+.card .title {
+	font-size: 1.2em;
+	font-weight: 500;
+	margin: 10px 0;
+}
+
+.card .text {
+	color: #9ca2bd;
+}
+
+/*--------------------SECTION INFO END--------------------*/
+/*--------------------SECTION SERVICES GO--------------------*/
+/*.item, .list, .button-item, .number, .text  { border: 1px solid red; }*/
+.services {
+	background-image: url(images/bgg2.jpg);
+	background-size: cover;
+	height: 100vh; 
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.services .title {
+	font-size: 2em;
+	text-align: center;
+	font-weight: 500;
+	color: white;
+	margin: 20px 0;
+}
+
+.services .list {
+	width: 800px;
+	background-color: #fafbff;
+	margin: 0 auto;
+	padding: 20px 20px 10px;
+	border-radius: 10px;
+}
+
+.services .item {
+	height: 70px;
+	margin: 5px 0;
+	align-items: center;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.services .item:hover {
+	background-color: #ffffff;
+	box-shadow: 0px 8px 25px rgba(102,102,102,0.10);
+	transition: 0.5s;
+}
+
+.services .item:hover .number {
+	background-color: #f2effc;
+	color: #7b5df7;
+	transition: 0.3s;
+}
+
+.services .number {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border: 2px solid #efeff7;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.1em;
+	font-weight: 500;
+	margin: 0 20px;
+}
+
+.services .button-item {
+	height: 50px; 
+	text-align: center;
+	margin-top: 20px;
+}
+
+.button-item a {
+	text-align: center;
+	font-size: 1.3em;
+	color: white;
+	font-weight: 400;
+	padding: 10px 40px;
+}
+/*--------------------SECTION SERVICES END--------------------*/
+/*--------------------SECTION PRODUCTS GO--------------------*/
+/*.products, .item, .title, .text, .item a, .link { border: 1px solid red; }*/
+.products {
+	justify-content: space-around;
+	margin: 60px 0;
+}
+
+.products .flex {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.products .title {
+	font-size: 2em;
+	text-align: center;
+	font-weight: 500;
+	margin: 20px 0;
+}
+
+.products .text {
+	font-size: 1.4em;
+	width: 500px;
+	margin: 20px 0 40px;
+}
+
+.products .link {text-align: center; margin-bottom: 20px;}
+
+.products a {
+	display: inline;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: 400;
+	padding: 10px 40px;
+}
+/*--------------------SECTION PRODUCTS END--------------------*/
+/*--------------------SECTION AUTH GO--------------------*/
+/*.auth, .auth .title, .row, .item, .grid { border: 1px solid red; }*/
+.auth {
+	background-color: #313142;
+	flex-direction: column;
+	padding: 20px 20px 40px;
+}
+
+.auth .title {
+	font-size: 2em;
+	text-align: center;
+	font-weight: 500;
+	margin: 0 0 20px;
+	color: white;
+}
+
+form {
+	background-color: white;
+	padding: 40px 20px 0;
+	width: 600px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.grid {
+	width: 400px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 400px;
+	grid-template-rows: 100px 100px 70px 50px;
+}
+
+form .row {
+	margin: 10px 0 20px;
+}
+
+label {
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+input[type="text"], input[type="password"] {
+	display: block;
+	font-size: 1.2em;
+	padding: 10px;
+	border: 2px solid #efeff7;
+	border-radius: 5px;
+	width: 353px;
+	outline: none;
+}
+
+input[type="submit"] {
+	display: block;
+	color: white;
+	background: rgb(115,77,247);
+	background: linear-gradient(to right, rgba(115,77,247,1) 0%, rgba(173,97,239,1) 100%);
+	text-decoration: none;
+	text-align: center;
+	border-radius: 100px;
+	border: none;
+	user-select: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 1.3em;
+	font-weight: 400;
+	padding: 10px 40px;
+	width: 375px;
+}
+
+.auth .text a {
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.auth .no-margin {margin: 0;}
+/*--------------------SECTION AUTH END--------------------*/
+/*--------------------MAIN END--------------------*/
+/*--------------------FOOTER GO--------------------*/
+footer {
+	height: 200px;
+	background-color: #262526;
+	color: white;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	padding: 0 50px;
+}
+
+footer .name {
+	color: #2EBBB2;
+	font-size: 1.5em;
+	width: 300px;
+	text-align: center;
+}
+
+footer .add {
+	text-align: center;
+	font-size: 1.2em;
+}
+/*--------------------FOOTER END--------------------*/

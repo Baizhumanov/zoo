@@ -1,0 +1,136 @@
+html, body {padding: 0; margin: 0;}
+body {
+	font-family: Roboto,
+	'Poppins',
+	BlinkMacSystemFont,
+	Segoe UI,
+	Roboto,
+	Oxygen,
+	Ubuntu,
+	Cantarell,
+	Fira Sans,
+	Droid Sans,
+	Helvetica Neue,
+	sans-serif;
+	/*color: #423c4a;*/
+	color: #3f3f4f;
+	background-color: #fafbff;
+}
+
+.flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+/*--------------------HEADER GO--------------------*/
+header {
+	height: 60px;
+	background-color: #313142;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px;
+}
+
+header .item {
+	display: flex;
+	align-items: center;
+}
+
+header a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 0 20px;
+	margin: 0 20px;
+	font-size: 1.1em;
+}
+
+a.main-link {
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+header input[type="submit"] {
+	font-size: 1.2em;
+	display: block;
+	text-decoration: none;
+	color: #ff9ea7;
+	background: none;
+	padding: 5px 25px;
+	outline: none;
+	border-radius: 5px;
+	border: 2px solid #ff9ea7;
+	cursor: pointer;
+}
+
+.hide {display: none;}
+/*--------------------HEADER END--------------------*/
+/*--------------------MAIN GO--------------------*/
+main .title {
+	font-size: 1.5em;
+	font-weight: 500;
+	text-align: center;
+	margin: 20px 0;
+}
+
+main .app {
+	padding: 20px;
+	margin: 20px;
+	background-color: white;
+	box-shadow: 0px 10px 15px rgba(115, 77, 247, 0.20);
+	border-radius: 5px;
+	justify-content: space-between;
+}
+
+.app .data {
+	margin: 10px 0;
+	font-size: 1.1em;
+}
+
+.data .params {font-weight: 500;}
+
+.products {
+	margin-right: auto;
+	margin-left: 30px;
+	background-color: #f2effc;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.products .item {
+	margin: 5px 0;
+}
+
+.manage, .manage form, .manage input {
+	/*border: 1px solid red;*/
+}
+
+.manage {align-self: flex-end;}
+.manage form {margin: 0 20px;}
+
+.update, .delete {
+	font-size: 1.2em;
+	font-weight: 500;
+	display: block;
+	color: white;
+	background: rgb(115,77,247);
+	background: linear-gradient(to right, rgba(115,77,247,1) 0%, rgba(173,97,239,1) 100%);
+	padding: 7px 25px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.delete {
+	background: none;
+	color: #ff9ea7;
+	border: 2px solid #ff9ea7;
+}
+/*--------------------MAIN END--------------------*/

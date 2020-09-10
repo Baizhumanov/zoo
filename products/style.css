@@ -1,0 +1,198 @@
+html, body {padding: 0; margin: 0;}
+body {
+	font-family: Roboto,
+	'Poppins',
+	BlinkMacSystemFont,
+	Segoe UI,
+	Roboto,
+	Oxygen,
+	Ubuntu,
+	Cantarell,
+	Fira Sans,
+	Droid Sans,
+	Helvetica Neue,
+	sans-serif;
+	/*color: #423c4a;*/
+	color: #3f3f4f;
+	background-color: #f4f8fc;
+}
+
+.flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.tac {text-align: center;}
+
+a.btn-main {
+	font-weight: 500;
+	color: white;
+	background: rgb(115,77,247);
+	background: linear-gradient(to right, rgba(115,77,247,1) 0%, rgba(173,97,239,1) 100%);
+	text-decoration: none;
+	text-align: center;
+	border-radius: 100px;
+	user-select: none;
+	outline: none;
+}
+
+/*--------------------HEADER GO--------------------*/
+header {
+	height: 60px;
+	background-color: #313142;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px;
+}
+
+header .item {
+	display: flex;
+	align-items: center;
+}
+
+header a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 0 20px;
+	margin: 0 20px;
+	font-size: 1.1em;
+}
+
+a.main-link {
+	  /*как то темно*/
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+.hide {display: none;}
+/*--------------------HEADER END--------------------*/
+/*--------------------MAIN GO--------------------*/
+.title {
+	font-size: 2em;
+	text-align: center;
+	margin: 20px 0;
+	margin-bottom: 40px;
+}
+.grid {margin: 20px 50px;}
+/*--------------------MAIN - CARD GO--------------------*/
+.grid, .item {
+	/*border: 1px solid red;*/
+}
+
+.count, .name, .price, .sum, .content, .count .text, .image {
+	/*border: 1px solid green;*/
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(auto-fill, 1fr);
+	grid-row-gap: 30px;
+	margin-bottom: 50px;
+}
+
+.grid .item {
+	border-radius: 10px;
+	width: 240px;
+	height: 360px;
+	max-width: 240px;
+	max-height: 360px;
+	border: 2px solid #efeff7;
+	background-color: none;
+	display: flex;
+	flex-direction: column;
+	transition: 0.4s;
+}
+
+.grid .item:hover {
+	box-shadow:0px 8px 25px rgba(102,102,102,0.10);
+	background-color: #ffffff;
+	border-color: #ffffff;
+	transition: 0.4s;
+}
+
+.grid .selected {
+	box-shadow: 0px 8px 25px rgba(102,102,102,0.10);
+	border-color: #ffffff;
+	background-color: #ffffff;
+}
+
+.item .image {
+	margin: 10px;
+}
+
+.image img {
+	border-radius: 10px;
+}
+
+.item .name {
+	text-align: center;
+	height: 50px;
+	max-height: 50px;
+	/*margin-bottom: 10px;*/
+	font-size: 1.2em;
+	font-weight: 500;
+	/*background-color: #232531;*/
+	color: #737994;
+	/*color: #ffffff;*/
+	color: #232531;
+	border-radius: 10px 10px 0 0;
+	padding: 5px 10px;
+}
+
+.item .content {
+	/*height: 100%;*/
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 10px 10px;
+}
+
+.item .price, .item .weight {
+	font-size: 1.2em;
+}
+
+.item label {
+	align-self: center;
+}
+
+label input[type="checkbox"] {display: none;}
+label span {
+	position: relative;
+	display: inline-block;
+	background: #f2effc;
+	color: #555;
+	padding: 8px 15px;
+	border-radius: 5px;
+	font-size: 1.1em;
+	transition: 0.5s;
+	user-select: none;
+	cursor: pointer;
+	overflow-x: hidden;
+}
+
+label input[type="checkbox"]:checked ~ span {
+	background: rgb(173, 97, 239);
+	color: white;
+}
+/*--------------------MAIN - CARD END--------------------*/
+/*--------------------MAIN - SUM GO--------------------*/
+.button {
+	position: fixed;
+	top: 90%;
+	left: 75%;
+}
+
+.button a {
+	padding: 10px 40px;
+	font-size: 1.2em;
+}
+/*--------------------MAIN - SUM END--------------------*/

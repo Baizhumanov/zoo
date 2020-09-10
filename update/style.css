@@ -1,0 +1,224 @@
+html, body {padding: 0; margin: 0;}
+body {
+	font-family: Roboto,
+	'Poppins',
+	BlinkMacSystemFont,
+	Segoe UI,
+	Roboto,
+	Oxygen,
+	Ubuntu,
+	Cantarell,
+	Fira Sans,
+	Droid Sans,
+	Helvetica Neue,
+	sans-serif;
+	/*color: #423c4a;*/
+	color: #3f3f4f;
+	background-color: #fafbff;
+}
+
+.flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+a.btn-main {
+	font-weight: 500;
+	color: white;
+	background: rgb(115,77,247);
+	background: linear-gradient(to right, rgba(115,77,247,1) 0%, rgba(173,97,239,1) 100%);
+	text-decoration: none;
+	text-align: center;
+	border-radius: 100px;
+	user-select: none;
+	outline: none;
+}
+
+/*--------------------HEADER GO--------------------*/
+header {
+	height: 60px;
+	background-color: #313142;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px;
+}
+
+header .item {
+	display: flex;
+	align-items: center;
+}
+
+header a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 0 20px;
+	margin: 0 20px;
+	font-size: 1.1em;
+}
+
+a.main-link {
+	  /*как то темно*/
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+.hide {display: none;}
+/*--------------------HEADER END--------------------*/
+/*--------------------MAIN GO--------------------*/
+main, .module, .row {
+	/*border: 1px solid red;*/
+}
+
+.module {
+	background-color: white;
+	padding: 20px;
+	margin: 20px;
+	box-shadow: 0px 10px 15px rgba(115, 77, 247, 0.25);
+	border-radius: 5px;
+}
+
+form .title, .user .title {
+	font-size: 1.4em;
+	font-weight: 500;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.log {
+	/*border: 1px solid green;*/
+	padding: 20px;
+}
+
+.row {
+	margin: 20px 0;
+}
+
+form label, form input {
+	display: block;
+	outline: none;
+}
+
+.log label, .reg label {
+	font-size: 1.1em;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+	font-size: 1.1em;
+	padding: 10px 20px;
+	border: 2px solid #efeff7;
+	border-radius: 5px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	width: 100%;
+	font-size: 1.1em;
+	font-weight: 500;
+	padding: 10px;
+	background: rgb(115,77,247);
+	background: linear-gradient(to right, rgba(115,77,247,1) 0%, rgba(173,97,239,1) 100%);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.module a {
+	text-decoration: none;
+	font-weight: 500;
+	color: #3f3f4f;
+	text-decoration: underline;
+}
+
+
+
+input[type="date"] {
+	font-family: inherit;
+	font-size: 1.1em;
+	overflow: hidden;
+	padding: 10px;
+	border: 2px solid #efeff7;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+::-webkit-inner-spin-button {display: none;}
+
+.module:nth-child(2) {
+	width: 800px;
+}
+
+.data, .data .row {
+	/*border: 1px solid red;*/
+}
+
+.data {padding: 0 20px;}
+.data .title {padding: 0;}
+
+.data label {
+	font-size: 1.1em;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.grid {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	grid-row-gap: 10px;
+}
+
+.grid .item {margin: 0 auto;}
+.item label {
+	font-size: 1em;
+	font-weight: 400;
+	margin: 0;
+}
+
+label input[type="radio"] {display: none;}
+label span {
+	position: relative;
+	display: inline-block;
+	background: #f2effc;
+	color: #555;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 1.1em;
+	transition: 0.5s;
+	user-select: none;
+	cursor: pointer;
+	overflow-x: hidden;
+}
+
+label input[type="radio"]:checked ~ span {
+	background: rgb(173, 97, 239);
+	color: white;
+}
+
+.data input[type="submit"] {
+	width: auto;
+	padding: 10px 25px;
+}
+
+
+.param {font-weight: 500;}
+.user .row, .user .title {font-size: 1.2em;}
+.last-row {margin: 30px 0;}
+
+.row.flex {justify-content: space-around;}
+.message {
+	font-size: 1.5em;
+	font-weight: 500;
+	text-align: center;
+	margin: 20px auto;
+}
+/*--------------------MAIN END--------------------*/
